@@ -22,8 +22,8 @@ import urllib.request
 # bot = telebot.TeleBot("1030009658:AAF2BcUKWm7lTAdQ2CRq27ycHI4qJfKculs")
 # TOKEN = '1030009658:AAF2BcUKWm7lTAdQ2CRq27ycHI4qJfKculs'
 
-bot = telebot.TeleBot("967028211:AAF2juj_xC2AjjNbW2GB9n__Xv7PRUYGNIQ")
-TOKEN = '967028211:AAF2juj_xC2AjjNbW2GB9n__Xv7PRUYGNIQ'
+bot = telebot.TeleBot("1186768647:AAHAQ23Jb1U6MTK203bxXC_-I6OuJusZ-3s")
+TOKEN = '1186768647:AAHAQ23Jb1U6MTK203bxXC_-I6OuJusZ-3s'
 
 
 eror = '🤷‍♂️*Результатов не найдено. Возможно фильма или сериала с таким названием нет или вы ввели название с ошибкой.*'\
@@ -138,12 +138,12 @@ def bad_poisk(message):
 #     for row in myresult:
 #         row = int(row[0])
 #   for us in row:
-#   if userId != 131339353 and userId != 136786564:
+#   if userId != 324969393 and userId != 324969393:
     global eror
     global podptext
     chri = "member"
     if message.text != "после" and message.text != "После" and message.text != "ПОСЛЕ":  
-        if chri == bot.get_chat_member(chat_id="@movies_filmy", user_id=message.from_user.id).status or message.from_user.id == 136786564:
+        if chri == bot.get_chat_member(chat_id="@movies_filmy", user_id=message.from_user.id).status or message.from_user.id == 324969393:
             if len(message.text)>3:
                 try:
                     x = int(message.text) + 1
@@ -166,7 +166,7 @@ def bad_poisk(message):
                     #     bot.send_message(message.chat.id, 'Ух!)', parse_mode=ParseMode.MARKDOWN)
 
                     z = 'http://playeronline.pro/api/videos.json?title=' + urllib.parse.quote(
-                        message.text) + '&token=c625499166500fb5126634a67b57c0c4'
+                        message.text) + '&token=85830ea7678f45a6647affe05b742c92'
                     try:
                         
                         # proxies = {'http': 'http://20mY2G:j3RW8y@45.87.241.152:8000'}
