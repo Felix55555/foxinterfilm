@@ -267,7 +267,7 @@ def getMessage():
 def webhook():
     TOKEN = '1186768647:AAHAQ23Jb1U6MTK203bxXC_-I6OuJusZ-3s8443'
     bot.remove_webhook()
-    bot.set_webhook(url='https://evening-badlands-20190.herokuapp.com//' + TOKEN)
+    bot.set_webhook(url='https://evening-badlands-20190.herokuapp.com/' + TOKEN)
     return "!", 200
 
 if __name__ == "__main__":
