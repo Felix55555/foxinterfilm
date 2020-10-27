@@ -80,10 +80,10 @@ def send_welcome(message):
         mydb.commit()
         mydb.close()
         chri = "member"
-        if chri == bot.get_chat_member(chat_id="@filmy", user_id=message.from_user.id).status:
+        if chri == bot.get_chat_member(chat_id="https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng", user_id=message.from_user.id).status:
             bot.send_message(message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
         else:
-            urlpod = "https://t.me/joinchat/AAAAAEG2kXz57ViO_tZXyA"                   
+            urlpod = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"                   
             keyboard = types.InlineKeyboardMarkup()
             url_button = types.InlineKeyboardButton(text='Подписаться ➡️', url=urlpod)
             url_button2 = types.InlineKeyboardButton(text="Я подписался 👍", callback_data='testp')
@@ -100,7 +100,7 @@ def callback_inline(call):
     if call.message:
         if call.data == 'testp':
             chri = "member"
-            if chri == bot.get_chat_member(chat_id="@filmy", user_id = call.message.chat.id).status:
+            if chri == bot.get_chat_member(chat_id="https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng", user_id = call.message.chat.id).status:
                 bot.send_message(call.message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
             else:
                 bot.answer_callback_query(callback_query_id=call.id, show_alert=True, text="Вы не подписаны на канал!🤷‍♂️ Подпишитесь!")   
@@ -143,7 +143,7 @@ def bad_poisk(message):
     global podptext
     chri = "member"
     if message.text != "после" and message.text != "После" and message.text != "ПОСЛЕ":  
-        if chri == bot.get_chat_member(chat_id="@filmy", user_id=message.from_user.id).status or message.from_user.id == 582978327:
+        if chri == bot.get_chat_member(chat_id="https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng", user_id=message.from_user.id).status or message.from_user.id == 324969393:
             if len(message.text)>3:
                 try:
                     x = int(message.text) + 1
@@ -200,7 +200,7 @@ def bad_poisk(message):
                                             "\n" \
                                             '[🎮 ИГРЫ БЕСПЛАТНО]'+ '(https://bit.ly/2J09KdU)'
                                         url2 = "https://t.me/filmy_serialy_bot"
-                                        url3 = "https://t.me/filmy"                   
+                                        url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"                   
                                         keyboard = types.InlineKeyboardMarkup()
                                         url_button = types.InlineKeyboardButton(text="Смотреть фильм", url= url1)
                                         url_button2 = types.InlineKeyboardButton(text="🔍Поиск фильмов", url= url2)
@@ -225,7 +225,7 @@ def bad_poisk(message):
                                             '[🎮 ИГРЫ БЕСПЛАТНО]'+ '(https://bit.ly/2J09KdU)'
                                             
                                         url2 = "https://t.me/filmy_serialy_bot"
-                                        url3 = "https://t.me/filmy"
+                                        url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
                                         keyboard = types.InlineKeyboardMarkup()
                                         url_button = types.InlineKeyboardButton(text="Смотреть сериал", url= url1)
                                         url_button2 = types.InlineKeyboardButton(text="🔍Поиск фильмов", url= url2)
@@ -239,7 +239,7 @@ def bad_poisk(message):
                     except urllib.error.URLError:
                         bot.send_message(message.chat.id, "Сейчас в работе телеграм BotApi наблюдаются сбои, поэтому на ваш запрос не поступило ответа от сервера. Вы можете попробовать еще раз или вернуться позже. Приносим вам свои извинения за неудобства!", parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)       
         else:
-            urlpod = "https://t.me/filmy"
+            urlpod = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
             keyboard = types.InlineKeyboardMarkup()
             url_button = types.InlineKeyboardButton(text='Подписаться ➡️', url=urlpod)
             url_button2 = types.InlineKeyboardButton(text="Я подписался 👍", callback_data='testp')
