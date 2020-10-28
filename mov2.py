@@ -80,7 +80,6 @@ def send_welcome(message):
         mydb.commit()
         mydb.close()
         chri = "member"
-        chri = "member"
             try:
                 status = bot.get_chat_member(chat_id="539655707", user_id=call.message.chat.id).status
             except telebot.apihelper.ApiException:
