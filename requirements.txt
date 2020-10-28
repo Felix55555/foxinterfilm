@@ -20,5 +20,4 @@ wcwidth==0.1.7
 flask
 python-telegram-bot==12.2.0
 mysql-connector
-peewee==3.13.3
-importlib-metadata==1.6.0
+
