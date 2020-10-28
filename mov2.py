@@ -239,7 +239,7 @@ def bad_poisk(message):
                     except urllib.error.URLError:
                         bot.send_message(message.chat.id, "Сейчас в работе телеграм BotApi наблюдаются сбои, поэтому на ваш запрос не поступило ответа от сервера. Вы можете попробовать еще раз или вернуться позже. Приносим вам свои извинения за неудобства!", parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)       
         else:
-            urlpod = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
+            urlpod = "@filmy_1080"
             keyboard = types.InlineKeyboardMarkup()
             url_button = types.InlineKeyboardButton(text='Подписаться ➡️', url=urlpod)
             url_button2 = types.InlineKeyboardButton(text="Я подписался 👍", callback_data='testp')
