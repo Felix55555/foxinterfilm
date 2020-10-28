@@ -16,7 +16,7 @@ import urllib.request
 
 # from mysql.connector import Error
 
-# mydb = mysql.connector.connect(host="nbfj50setb1vgbjh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", user='ej4hz3lszccvek32', passwd='i06m50w3ohokodzw', database='d6idyikh5aoehxm1')
+# mydb = mysql.connector.connect(host="ikino.cxutdxbu2lll.eu-west-2.rds.amazonaws.com", user='adminroot', passwd='adminroot', database='mydatabase')
 # mycursor = mydb.cursor()
 
 # bot = telebot.TeleBot("1030009658:AAF2BcUKWm7lTAdQ2CRq27ycHI4qJfKculs")
