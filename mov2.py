@@ -10,9 +10,10 @@ from telegram.ext import Updater
 from telegram.ext import MessageHandler
 import os
 from flask import Flask, request
-import mysql.connector
+#import mysql.connector
 import threading
 import urllib.request
+from peewee import SqliteDatabase, Model, CharField, PrimaryKeyField
 
 # from mysql.connector import Error
 
@@ -71,9 +72,12 @@ def send_welcome(message):
     userN = str(message.from_user.username)
     userId = int(message.from_user.id)
     try:
-        mydb = mysql.connector.connect(host="ikino.cxutdxbu2lll.eu-west-2.rds.amazonaws.com", user='ikino_site', passwd='i06m50w3ohokodzw', database='mydatabase', port='3306')
+        #mydb = mysql.connector.connect(host="ikino.cxutdxbu2lll.eu-west-2.rds.amazonaws.com", user='ikino_site', passwd='i06m50w3ohokodzw', database='mydatabase', port='3306')
         # if mydb.is_connected():
-        mycursor = mydb.cursor()
+        #mycursor = mydb.cursor()
+        
+        database = SqliteDatabase('db1.sqlite3.sql')
+        database.connect()
         sqlform = 'Insert into Members2(usernames, userid, imya, famil) values(%s, %s, %s, %s)'
         Userss = [(userN, userId, fname, lname)]
         mycursor.executemany(sqlform, Userss)
