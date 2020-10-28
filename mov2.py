@@ -189,7 +189,7 @@ def bad_poisk(message):
                             else:
                                 for i in data:
                                     if i['type'] == 'movie' and i['kinopoisk_id'] != 1049459 and i['kinopoisk_id'] != 989978 and i['kinopoisk_id'] != 1055319 and i['kinopoisk_id'] != 1183571 and i['kinopoisk_id'] != 1201533 and i['kinopoisk_id'] != 1102923 and i['kinopoisk_id'] != 809823 and i['kinopoisk_id'] != 1245524 and i['kinopoisk_id'] != 995075 and i['kinopoisk_id'] != 1281638 and i['kinopoisk_id'] != 737900 and i['kinopoisk_id'] != 1112920 and i['kinopoisk_id'] != 1371715:
-                                        url1 = 'http://playeronline.pro/movie/' + i['token'] + '/iframe'
+                                        url1 = 'http://playeronline.pro/movie/' + i['token'] + '/iframe?d=skyfilm.org'
                                         otvet = '['+'🎥'+']'+'('+ i['poster']+')'+ '*'+i['title_ru'] + " " +'('+ str(i['year']) + '/' + i['quality'] + ')'+'*'+'\n' \
                                             +'Озвучка:' + " " + i['translator'] + '\n' + '\n' \
                                             + '[👁‍🗨СМОТРЕТЬ ФИЛЬМ]' + '('+ url1 + ')'\
@@ -213,7 +213,7 @@ def bad_poisk(message):
 
 
                                     elif i['type'] == 'serial':
-                                        url1 = 'http://playeronline.pro/serial/' + i['token'] + '/iframe'
+                                        url1 = 'http://playeronline.pro/serial/' + i['token'] + '/iframe?d=skyfilm.org'
                                         otvet = '['+'🎥'+']'+'('+ i['poster']+')'+ '*'+i['title_ru'] + " " +'('+ str(i['year']) + '/' + i['quality'] + ')'+'*'+'\n' \
                                             +'Озвучка:' + " " + i['translator'] + '\n' + '\n' \
                                             + '[👁‍🗨СМОТРЕТЬ СЕРИАЛ]' + '('+ url1 + ')'\
