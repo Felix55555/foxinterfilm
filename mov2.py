@@ -155,7 +155,7 @@ def bad_poisk(message):
     try:
         try:
             status = bot.get_chat_member(-1001178941284,
-                                         user_id=message.from_user.id).status or message.from_user.id == 324969393
+                                         user_id=message.from_user.id).status
         except telebot.apihelper.ApiException:
             status = False
         if chri == status:
