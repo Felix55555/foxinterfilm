@@ -71,7 +71,7 @@ def send_welcome(message):
     userN = str(message.from_user.username)
     userId = int(message.from_user.id)
     try:
-        mydb = mysql.connector.connect(host="http://37.46.129.145:22331/pma/index.php", user='xwPeL0jnfb1IkYRje', passwd='xwPeL0jnfb1IkYRj', database='ikino_site', port='2233')
+        mydb = mysql.connector.connect(host="nbfj50setb1vgbjh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", user='ej4hz3lszccvek32', passwd='i06m50w3ohokodzw', database='d6idyikh5aoehxm1')
         # if mydb.is_connected():
         mycursor = mydb.cursor()
         sqlform = 'Insert into Members2(usernames, userid, imya, famil) values(%s, %s, %s, %s)'
