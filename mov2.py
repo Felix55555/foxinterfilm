@@ -80,12 +80,10 @@ def send_welcome(message):
         mydb.commit()
         mydb.close()
         chri = "member"
-            try:
-                status = bot.get_chat_member(chat_id="539655707", user_id=call.message.chat.id).status
-            except telebot.apihelper.ApiException:
-                status = False
-            if chri == status:
-        print(status)
+        try:
+            status = bot.get_chat_member(chat_id="539655707", user_id=call.message.chat.id).status
+        except telebot.apihelper.ApiException:
+            status = False
         if chri == status:
             bot.send_message(message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
         else:
@@ -105,7 +103,6 @@ def callback_inline(call):
     global podptext
     if call.message:
         if call.data == 'testp':
-            chri = "member"
             chri = "member"
             try:
                 status = bot.get_chat_member(chat_id="539655707", user_id=call.message.chat.id).status
@@ -153,7 +150,8 @@ def bad_poisk(message):
     global eror
     global podptext
     chri = "member"
-     try:
+    try:
+        try:
             status = bot.get_chat_member(chat_id="539655707",
                                          user_id=message.from_user.id).status or message.from_user.id == 324969393
         except telebot.apihelper.ApiException:
