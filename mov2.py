@@ -80,10 +80,10 @@ def send_welcome(message):
         mydb.commit()
         mydb.close()
         chri = "member"
-        if chri == bot.get_chat_member(chat_id="https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng", user_id=message.from_user.id).status:
+        if chri == bot.get_chat_member(chat_id="@filmy_1080", user_id=message.from_user.id).status:
             bot.send_message(message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
         else:
-            urlpod = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"                   
+            urlpod = "@filmy_1080"                   
             keyboard = types.InlineKeyboardMarkup()
             url_button = types.InlineKeyboardButton(text='Подписаться ➡️', url=urlpod)
             url_button2 = types.InlineKeyboardButton(text="Я подписался 👍", callback_data='testp')
@@ -100,7 +100,7 @@ def callback_inline(call):
     if call.message:
         if call.data == 'testp':
             chri = "member"
-            if chri == bot.get_chat_member(chat_id="https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng", user_id = call.message.chat.id).status:
+            if chri == bot.get_chat_member(chat_id="@filmy_1080", user_id = call.message.chat.id).status:
                 bot.send_message(call.message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
             else:
                 bot.answer_callback_query(callback_query_id=call.id, show_alert=True, text="Вы не подписаны на канал!🤷‍♂️ Подпишитесь!")   
@@ -143,7 +143,7 @@ def bad_poisk(message):
     global podptext
     chri = "member"
     if message.text != "после" and message.text != "После" and message.text != "ПОСЛЕ":  
-        if chri == bot.get_chat_member(chat_id="https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng", user_id=message.from_user.id).status or message.from_user.id == 324969393:
+        if chri == bot.get_chat_member(chat_id="@filmy_1080", user_id=message.from_user.id).status or message.from_user.id == 324969393:
             if len(message.text)>3:
                 try:
                     x = int(message.text) + 1
