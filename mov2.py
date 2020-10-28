@@ -10,10 +10,9 @@ from telegram.ext import Updater
 from telegram.ext import MessageHandler
 import os
 from flask import Flask, request
-#import mysql.connector
+import mysql.connector
 import threading
 import urllib.request
-from peewee import SqliteDatabase, Model, CharField, PrimaryKeyField
 
 # from mysql.connector import Error
 
