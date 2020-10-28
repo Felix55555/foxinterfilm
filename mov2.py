@@ -102,7 +102,12 @@ def callback_inline(call):
     if call.message:
         if call.data == 'testp':
             chri = "member"
-            if chri == bot.get_chat_member(chat_id="539655707", user_id = call.message.chat.id).status:
+            chri = "member"
+            try:
+                status = bot.get_chat_member(chat_id="539655707", user_id=call.message.chat.id).status
+            except telebot.apihelper.ApiException:
+                status = False
+            if chri == status:
                 bot.send_message(call.message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
             else:
                 bot.answer_callback_query(callback_query_id=call.id, show_alert=True, text="Вы не подписаны на канал!🤷‍♂️ Подпишитесь!")   
@@ -144,8 +149,12 @@ def bad_poisk(message):
     global eror
     global podptext
     chri = "member"
-    if message.text != "после" and message.text != "После" and message.text != "ПОСЛЕ":  
-        if chri == bot.get_chat_member(chat_id="539655707", user_id=message.from_user.id).status or message.from_user.id == 324969393:
+     try:
+            status = bot.get_chat_member(chat_id="539655707",
+                                         user_id=message.from_user.id).status or message.from_user.id == 324969393
+        except telebot.apihelper.ApiException:
+            status = False
+        if chri == status:
             if len(message.text)>3:
                 try:
                     x = int(message.text) + 1
