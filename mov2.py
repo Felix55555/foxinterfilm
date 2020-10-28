@@ -80,7 +80,9 @@ def send_welcome(message):
         mydb.commit()
         mydb.close()
         chri = "member"
-        if chri == bot.get_chat_member(chat_id="@filmy_1080", user_id=message.from_user.id).status:
+        status = bot.get_chat_member(chat_id="@filmy_1080", user_id=message.from_user.id).status
+        print(status)
+        if chri == status:
             bot.send_message(message.chat.id, privet, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview = True)
         else:
             urlpod = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"                   
