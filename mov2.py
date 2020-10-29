@@ -22,8 +22,8 @@ import urllib.request
 # bot = telebot.TeleBot("1030009658:AAF2BcUKWm7lTAdQ2CRq27ycHI4qJfKculs")
 # TOKEN = '1030009658:AAF2BcUKWm7lTAdQ2CRq27ycHI4qJfKculs'
 
-bot = telebot.TeleBot("1186768647:AAHAQ23Jb1U6MTK203bxXC_-I6OuJusZ-3s")
-TOKEN = '1186768647:AAHAQ23Jb1U6MTK203bxXC_-I6OuJusZ-3s'
+bot = telebot.TeleBot("1305572855:AAELpfkaUcWM-acsIiHWiL8OAuc_QUQGWVo")
+TOKEN = '1305572855:AAELpfkaUcWM-acsIiHWiL8OAuc_QUQGWVo'
 
 eror = '🤷‍♂️*Результатов не найдено. Возможно фильма или сериала с таким названием нет или вы ввели название с ошибкой.*' \
        '\n' \
@@ -31,9 +31,9 @@ eror = '🤷‍♂️*Результатов не найдено. Возможн
        'Попробуйте еще раз! Отправьте мне название фильма или сериала как оно пишется в Кинопоиске. *Год фильма или сериала, какой сезон и какая серия при поиске писать не нужно!!*' \
        "\n" \
        "\n" \
-       "_Задать вопросы или пообщаться можно в нашем чате_" + '👉 [@Kino_Chat]' + "(https://t.me/kino_chat)"
+       "_Задать вопросы или пообщаться можно в нашем чате_" + '👉 [Кино ЧатiKino | Фильмы 2020]' + "(https://t.me/joinchat/E16jsUYlEVoA6RYzFcH-_w)"
 
-podptext = 'Привет друзья! Наш бот абсолютно бесплатен и без рекламы! Но доступ у него открыт только подписчикам нашего канала👉 ' + '[ФИЛЬМЫ И СЕРИАЛЫ]' + '(@filmy_1080)' \
+podptext = 'Привет друзья! Наш бот абсолютно бесплатен и без рекламы! Но доступ у него открыт только подписчикам нашего канала👉 ' + '[iKino | Фильмы 2020]' + '(https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng)' \
                                                                                                                                                             "\n" \
                                                                                                                                                             "\n" \
                                                                                                                                                             'Подпишитесь, что бы не пропускать новинки! *После подписки нажмите кнопку "Я подписался". Доступ будет открыт автоматически.*'
@@ -220,11 +220,11 @@ def bad_poisk(message):
                                                 + '[👁‍🗨СМОТРЕТЬ ФИЛЬМ]' + '(' + url1 + ')' \
                                                                                          "\n" \
                                                                                          "\n" \
-                                                                                         '[🔍ПОИСК ФИЛЬМОВ]' + '(https://t.me/filmy_serialy_bot)' \
+                                                                                         '[🔍ПОИСК ФИЛЬМОВ]' + '(https://t.me/https://t.me/searchikino_bot)' \
                                                                                                                "\n" \
                                                                                                                "\n" \
-                                                                                                               '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/2J09KdU)'
-                                        url2 = "https://t.me/filmy_serialy_bot"
+                                                                                                               '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/31Eoxl1)'
+                                        url2 = "https://t.me/https://t.me/searchikino_bot"
                                         url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
                                         keyboard = types.InlineKeyboardMarkup()
                                         url_button = types.InlineKeyboardButton(text="Смотреть фильм", url=url1)
@@ -247,12 +247,12 @@ def bad_poisk(message):
                                                 + '[👁‍🗨СМОТРЕТЬ СЕРИАЛ]' + '(' + url1 + ')' \
                                                                                           "\n" \
                                                                                           "\n" \
-                                                                                          '[🔍ПОИСК ФИЛЬМОВ]' + '(https://t.me/filmy_serialy_bot)' \
+                                                                                          '[🔍ПОИСК ФИЛЬМОВ]' + '(https://t.me/https://t.me/searchikino_bot)' \
                                                                                                                 "\n" \
                                                                                                                 "\n" \
-                                                                                                                '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/2J09KdU)'
+                                                                                                                '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/31Eoxl1)'
 
-                                        url2 = "https://t.me/filmy_serialy_bot"
+                                        url2 = "https://t.me/searchikino_bot"
                                         url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
                                         keyboard = types.InlineKeyboardMarkup()
                                         url_button = types.InlineKeyboardButton(text="Смотреть сериал", url=url1)
@@ -301,7 +301,7 @@ def getMessage():
 
 @server.route("/")
 def webhook():
-    TOKEN = '1186768647:AAHAQ23Jb1U6MTK203bxXC_-I6OuJusZ-3s'
+    TOKEN = '1305572855:AAELpfkaUcWM-acsIiHWiL8OAuc_QUQGWVo'
     bot.remove_webhook()
     bot.set_webhook(url='https://evening-badlands-20190.herokuapp.com/' + TOKEN)
     return "!", 200
