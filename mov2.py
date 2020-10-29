@@ -224,7 +224,7 @@ def bad_poisk(message):
                                                                                                                "\n" \
                                                                                                                "\n" \
                                                                                                                '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/31Eoxl1)'
-                                        url2 = "https://t.me/https://t.me/searchikino_bot"
+                                        url2 = "https://t.me/searchikino_bot"
                                         url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
                                         keyboard = types.InlineKeyboardMarkup()
                                         url_button = types.InlineKeyboardButton(text="Смотреть фильм", url=url1)
