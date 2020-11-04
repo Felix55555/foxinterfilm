@@ -223,7 +223,7 @@ def bad_poisk(message):
                                                                                          '[🔍ПОИСК ФИЛЬМОВ]' + '(https://t.me/searchikino_bot)' \
                                                                                                                "\n" \
                                                                                                                "\n" \
-                                                                                                               '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/31Eoxl1)'
+                                                                                                               '[💰$1 за регистрацию]' + '(https://t.me/DinoBitBot?start=324969393)'
                                         url2 = "https://t.me/searchikino_bot"
                                         url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
                                         keyboard = types.InlineKeyboardMarkup()
@@ -250,7 +250,7 @@ def bad_poisk(message):
                                                                                           '[🔍ПОИСК ФИЛЬМОВ]' + '(https://t.me/searchikino_bot)' \
                                                                                                                 "\n" \
                                                                                                                 "\n" \
-                                                                                                                '[🎮 ИГРЫ БЕСПЛАТНО]' + '(https://bit.ly/31Eoxl1)'
+                                                                                                                '[💰$1 за регистрацию]' + '(https://t.me/DinoBitBot?start=324969393$1 за регистрацию)'
 
                                         url2 = "https://t.me/searchikino_bot"
                                         url3 = "https://t.me/joinchat/AAAAAEZFN2QP3nxwqJ-7Ng"
