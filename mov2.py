@@ -79,7 +79,7 @@ def send_welcome(message):
         mycursor.executemany(sqlform, Userss)
         mydb.commit()
         mydb.close()
-        ['creator', 'administrator', 'member']
+        chri = ['creator', 'administrator', 'member']
         try:
             status = bot.get_chat_member(-1001178941284, user_id=message.from_user.id).status
         except telebot.apihelper.ApiException:
