@@ -80,6 +80,7 @@ def send_welcome(message):
         mydb.commit()
         mydb.close()
         chri = "member"
+        chri = "creator"
         try:
             status = bot.get_chat_member(-1001178941284, user_id=message.from_user.id).status
         except telebot.apihelper.ApiException:
@@ -106,6 +107,7 @@ def callback_inline(call):
     if call.message:
         if call.data == 'testp':
             chri = "member"
+            chri = "creator"
             try:
                 status = bot.get_chat_member(-1001178941284, user_id=call.from_user.id).status
             except telebot.apihelper.ApiException:
@@ -152,6 +154,7 @@ def bad_poisk(message):
     global eror
     global podptext
     chri = "member"
+    chri = "creator"   
     try:
         try:
             status = bot.get_chat_member(-1001178941284,
