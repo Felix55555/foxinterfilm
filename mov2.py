@@ -79,8 +79,7 @@ def send_welcome(message):
         mycursor.executemany(sqlform, Userss)
         mydb.commit()
         mydb.close()
-        chri = "member"
-        chri = "creator"
+        chri = "member", 'creator'
         try:
             status = bot.get_chat_member(-1001178941284, user_id=message.from_user.id).status
         except telebot.apihelper.ApiException:
@@ -106,8 +105,7 @@ def callback_inline(call):
     global podptext
     if call.message:
         if call.data == 'testp':
-            chri = "member"
-            chri = "creator"
+            chri = "member", 'creator
             try:
                 status = bot.get_chat_member(-1001178941284, user_id=call.from_user.id).status
             except telebot.apihelper.ApiException:
@@ -153,8 +151,7 @@ def bad_poisk(message):
     #   if userId != 324969393 and userId != 324969393:
     global eror
     global podptext
-    chri = "member"
-    chri = "creator"   
+    chri = "member", 'creator'
     try:
         try:
             status = bot.get_chat_member(-1001178941284,
