@@ -105,7 +105,7 @@ def callback_inline(call):
     global podptext
     if call.message:
         if call.data == 'testp':
-            chri = "member", 'creator
+            chri = "member", 'creator'
             try:
                 status = bot.get_chat_member(-1001178941284, user_id=call.from_user.id).status
             except telebot.apihelper.ApiException:
