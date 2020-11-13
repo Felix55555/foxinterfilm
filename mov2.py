@@ -152,10 +152,8 @@ def bad_poisk(message):
     global eror
     global podptext
     chri = "member"
-    try:
-        try:
-            status = bot.get_chat_member(-1001178941284,
-                                         user_id=message.from_user.id).status or message.from_user.id == 324969393:
+    if message.text != "после" and message.text != "После" and message.text != "ПОСЛЕ":  
+        if chri == bot.get_chat_member(-1001178941284, user_id=message.from_user.id).status or message.from_user.id == 324969393:
         except telebot.apihelper.ApiException:
             status = False
         if chri == status:
