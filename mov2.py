@@ -1,38 +1,3 @@
-Skip to content
-mov
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@bitcoinmonster23 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-bitcoinmonster23
-/
-searchbot
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-searchbot/mov2.py /
-@bitcoinmonster23
-bitcoinmonster23 Update mov2.py
-Latest commit b3dba0d 2 minutes ago
- History
- 1 contributor
-311 lines (272 sloc)  18.6 KB
-  
 from telebot import types
 import urllib3
 import telebot
@@ -190,7 +155,7 @@ def bad_poisk(message):
     try:
         try:
             status = bot.get_chat_member(-1001178941284,
-                                         user_id=message.from_user.id).status
+                                         user_id=message.from_user.id).status or message.from_user.id == 324969393:
         except telebot.apihelper.ApiException:
             status = False
         if chri == status:
