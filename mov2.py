@@ -1,3 +1,38 @@
+Skip to content
+mov
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@bitcoinmonster23 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+bitcoinmonster23
+/
+searchbot
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+searchbot/mov2.py /
+@bitcoinmonster23
+bitcoinmonster23 Update mov2.py
+Latest commit b3dba0d 2 minutes ago
+ History
+ 1 contributor
+311 lines (272 sloc)  18.6 KB
+  
 from telebot import types
 import urllib3
 import telebot
@@ -152,8 +187,10 @@ def bad_poisk(message):
     global eror
     global podptext
     chri = "member"
-    if message.text != "после" and message.text != "После" and message.text != "ПОСЛЕ":  
-        if chri == bot.get_chat_member(-1001178941284, user_id=message.from_user.id).status or message.from_user.id == 324969393:
+    try:
+        try:
+            status = bot.get_chat_member(-1001178941284,
+                                         user_id=message.from_user.id).status
         except telebot.apihelper.ApiException:
             status = False
         if chri == status:
@@ -307,3 +344,15 @@ def webhook():
 
 if __name__ == "__main__":
     server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 8443)))
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
